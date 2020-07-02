@@ -10,7 +10,7 @@ try:
     #no hace falta headers pero lo metemos vacio
     headers = {}
     #la conexion en si
-    conn.request("GET", "https://api.covid19api.com/live/country/argentina/status/confirmed/date/2020-03-21T13:13:30Z", payload, headers)
+    conn.request("GET", "https://api.covid19api.com/total/country/argentina", payload, headers)
     #obtenemos response
     res = conn.getresponse()
     #leemos response
